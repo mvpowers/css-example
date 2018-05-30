@@ -1,25 +1,19 @@
 @font-face {
 	font-family: 'DIN Condensed Bold';
-	src: url('../fonts/din-condensed-bold.eot?#iefix') format('embedded-opentype'), 
-	     url('../fonts/din-condensed-bold.woff') format('woff'), 
-	     url('../fonts/din-condensed-bold.ttf') format('truetype'),
-	     url('../fonts/din-condensed-bold.svg#svgFontName') format('svg');
-	}
+	src: url('../fonts/din-condensed-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/din-condensed-bold.woff') format('woff'), url('../fonts/din-condensed-bold.ttf') format('truetype'), url('../fonts/din-condensed-bold.svg#svgFontName') format('svg');
+}
 
 @font-face {
-	font-family: 'Fontello';
-	src: url('../fonts/fontello.eot?#iefix') format('embedded-opentype'), 
-	     url('../fonts/fontello.woff') format('woff'), 
-	     url('../fonts/fontello.ttf') format('truetype'),
-	     url('../fonts/fontello.svg#svgFontName') format('svg');
-	}
-
+	font-family: 'Mocha Mattari';
+	src: url('../fonts/MochaMattari.eot?#iefix') format('embedded-opentype'), url('../fonts/MochaMattari.woff') format('woff'), url('../fonts/MochaMattari.ttf') format('truetype'), url('../fonts/MochaMattari.svg#svgFontName') format('svg');
+}
 
 html {
-    color: #222;
-    font-family: 'DIN Condensed Bold', Arial;
-    font-size: 1em;
-    line-height: 1.4;
+	background-color: #ccc;
+	color: #222;
+	font-family: 'DIN Condensed Bold', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 body {
@@ -28,10 +22,10 @@ body {
 }
 
 .browserupgrade {
-    background: #ccc;
-    color: #000;
-    margin: 0.2em 0;
-    padding: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	margin: 0.2em 0;
+	padding: 0.2em 0;
 }
 
 .header {
@@ -104,7 +98,7 @@ body {
 }
 
 .information__prize--ticket::before {
-	background-color: red;
+	background-color: #D81921;
 	border-radius: 50%;
 	color: #fff;
 	content: "\f145";
@@ -115,7 +109,7 @@ body {
 }
 
 .information__prize--plane::before {
-	background-color: red;
+	background-color: #D81921;
 	border-radius: 50%;
 	color: #fff;
 	content: "\f072";
@@ -126,7 +120,7 @@ body {
 }
 
 .information__prize--dollar::before {
-	background-color: red;
+	background-color: #D81921;
 	border-radius: 50%;
 	color: #fff;
 	content: "\f155";
@@ -134,4 +128,85 @@ body {
 	font-size: 0.8em;
 	margin-right: 10px;
 	padding: 5px 7px;
+}
+
+.entry {
+	background-color: #fff;
+	padding: 10px;
+}
+
+.entry__textInput {
+	align-content: center;
+	float: left;
+	width: 48%;
+}
+
+.entry__textInput input,
+select {
+	background-color: #F1F1F1;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	padding: 5px;
+	width: 100%;
+}
+
+.entry__textInput--phone label {
+	display: block;
+	width: 100%;
+}
+
+.entry__textInput--phone input {
+	background-color: #F1F1F1;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	padding: 5px;
+	width: 16%;
+}
+
+.entry__row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 7px;
+	width: 100%;
+}
+
+.entry__footnote {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.6em;
+}
+
+.entry__checkInput label {
+	bottom: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	position: relative;
+}
+
+.entry__checkInput input {
+	border: 1px solid #000;
+}
+
+.entry__submit {
+	background-color: #D81921;
+	border: 0;
+	color: #fff;
+	font-family: 'Mocha Mattari', Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	padding: 0.5em 1em;
+	position: absolute;
+	right: 8vw;
+	text-shadow: 2px 2px #8B080C;
+}
+
+.entry__submit:after {
+	border-color: #710D0D transparent transparent transparent;
+	border-style: solid;
+	border-width: 10px 20px 0 0;
+	bottom: -10px;
+	content: "";
+	display: block;
+	height: 0;
+	position: absolute;
+	right: 0;
+	width: 0;
 }
