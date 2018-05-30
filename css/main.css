@@ -72,17 +72,66 @@ body {
 }
 
 .content {
-	background-color: blue;
 	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
 }
 
 .column {
-	background-color: lightblue;
-	flex-grow: 1;
+	width: 45%;
 }
 
 .information__image {
-	height: 100%;
-	object-fit: contain;
+	background-size: cover;
 	width: 100%;
+}
+
+.information__header {
+	background-color: #D81921;
+	color: #fff;
+	font-size: 2em;
+	padding: 10px 0;
+	text-shadow: 2px 2px #8B080C;
+}
+
+.information__subheader {
+	font-size: 2em;
+	margin: 10px 0;
+}
+
+.information__prize {
+	font-size: 1.5em;
+}
+
+.information__prize--ticket::before {
+	background-color: red;
+	border-radius: 50%;
+	color: #fff;
+	content: "\f145";
+	font-family: FontAwesome;
+	font-size: 0.8em;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.information__prize--plane::before {
+	background-color: red;
+	border-radius: 50%;
+	color: #fff;
+	content: "\f072";
+	font-family: FontAwesome;
+	font-size: 0.8em;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.information__prize--dollar::before {
+	background-color: red;
+	border-radius: 50%;
+	color: #fff;
+	content: "\f155";
+	font-family: FontAwesome;
+	font-size: 0.8em;
+	margin-right: 10px;
+	padding: 5px 7px;
 }
