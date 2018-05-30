@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'DIN Condensed Bold';
+	src: url('../fonts/din-condensed-bold.eot?#iefix') format('embedded-opentype'), 
+	     url('../fonts/din-condensed-bold.woff') format('woff'), 
+	     url('../fonts/din-condensed-bold.ttf') format('truetype'),
+	     url('../fonts/din-condensed-bold.svg#svgFontName') format('svg');
+	}
+
+@font-face {
+	font-family: 'Fontello';
+	src: url('../fonts/fontello.eot?#iefix') format('embedded-opentype'), 
+	     url('../fonts/fontello.woff') format('woff'), 
+	     url('../fonts/fontello.ttf') format('truetype'),
+	     url('../fonts/fontello.svg#svgFontName') format('svg');
+	}
+
+
+html {
+    color: #222;
+    font-family: 'DIN Condensed Bold', Arial;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+	margin: 0 auto;
+	width: 80vw;
+}
+
+.browserupgrade {
+    background: #ccc;
+    color: #000;
+    margin: 0.2em 0;
+    padding: 0.2em 0;
+}
+
+.header {
+	background-color: #000;
+	border-bottom: 3px solid red;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	height: 25px;
+	margin: 10px;
+}
+
+.header__social {
+	align-items: center;
+	background-color: #ff0000;
+	color: #fff;
+	display: flex;
+	line-height: 1em;
+	padding: 0 10px;
+}
+
+.header__social--share {
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+
+.header__social--fb {
+	background-color: #3B5998;
+	margin-right: 5px;
+	padding: 3px 10px;
+}
+
+.header__social--tw {
+	background-color: #1DA1F2;
+	padding: 3px 10px;
+}
