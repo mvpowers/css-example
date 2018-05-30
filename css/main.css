@@ -70,3 +70,19 @@ body {
 	background-color: #1DA1F2;
 	padding: 3px 10px;
 }
+
+.content {
+	background-color: blue;
+	display: flex;
+}
+
+.column {
+	background-color: lightblue;
+	flex-grow: 1;
+}
+
+.information__image {
+	height: 100%;
+	object-fit: contain;
+	width: 100%;
+}
