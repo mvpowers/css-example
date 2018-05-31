@@ -50,7 +50,11 @@ a {
 .header {
 	background-color: #000;
 	border-bottom: 3px solid #d71921;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -60,9 +64,13 @@ a {
 }
 
 .header__social {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	background-color: #d71921;
 	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	line-height: 1em;
 	padding: 0 10px;
@@ -85,7 +93,11 @@ a {
 }
 
 .content {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding-top: 30px;
 }
@@ -101,6 +113,7 @@ a {
 
 .information__header {
 	background-color: #D81921;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #fff;
 	font-size: 2em;
@@ -136,6 +149,9 @@ a {
 }
 
 .information__ribbon {
+	background: -webkit-gradient(linear, left top, right top, from(#D11820), to(#A71118));
+	background: -webkit-linear-gradient(left, #D11820, #A71118);
+	background: -o-linear-gradient(left, #D11820, #A71118);
 	background: linear-gradient(to right, #D11820, #A71118);
 	content: ' ';
 	height: 3.4em;
@@ -189,13 +205,18 @@ a {
 }
 
 .entry {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(88%, rgba(255, 255, 255, 1)), color-stop(12%, rgba(255, 255, 255, 0.95)));
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 1) 88%, rgba(255, 255, 255, 0.95) 12%);
+	background: -o-linear-gradient(rgba(255, 255, 255, 1) 88%, rgba(255, 255, 255, 0.95) 12%);
 	background: linear-gradient(rgba(255, 255, 255, 1) 88%, rgba(255, 255, 255, 0.95) 12%);
+	-webkit-box-shadow: 0 0 4px #aaa;
 	box-shadow: 0 0 4px #aaa;
 	padding: 30px 15px;
 	position: relative;
 }
 
 .entry__textInput {
+	-ms-flex-line-pack: center;
 	align-content: center;
 	float: left;
 	width: 48%;
@@ -205,6 +226,7 @@ a {
 select {
 	background-color: #F1F1F1;
 	border: 1px solid #000;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 5px;
 	width: 100%;
@@ -218,13 +240,18 @@ select {
 .entry__textInput--phone input {
 	background-color: #F1F1F1;
 	border: 1px solid #000;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 5px;
 	width: 16%;
 }
 
 .entry__row {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin-bottom: 7px;
 	width: 100%;
