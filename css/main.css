@@ -88,6 +88,17 @@ body {
 	text-shadow: 2px 2px #8B080C;
 }
 
+.information__header::after {
+	border: 1.7em solid #D81921;
+	border-right-color: transparent;
+	content: "";
+	float: left;
+	left: 42vw;
+	margin-top: -1.7em;
+	position: absolute;
+	z-index: -1;
+}
+
 .information__subheader {
 	font-size: 2em;
 	margin: 10px 0;
@@ -132,6 +143,7 @@ body {
 
 .entry {
 	background-color: #fff;
+	box-shadow: 0 0 4px #aaa;
 	padding: 10px;
 }
 
@@ -209,4 +221,9 @@ select {
 	position: absolute;
 	right: 0;
 	width: 0;
+	z-index: -10;
+}
+
+.entry__captcha {
+	margin-top: 10px;
 }
