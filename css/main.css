@@ -9,18 +9,21 @@
 }
 
 html {
-	background-color: #ccc;
+	background-color: #000;
 	background-image: url('../img/bg.jpg');
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 	color: #222;
 	font-family: 'DIN Condensed Bold', Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	line-height: 1.4;
-	margin-bottom: 200px;
+	margin-bottom: 160px;
+	padding-bottom: 6em;
 }
 
 body {
 	margin: 0 auto;
+	min-width: 1090px;
 	width: 80vw;
 }
 
@@ -98,9 +101,10 @@ a {
 
 .information__header {
 	background-color: #D81921;
+	box-sizing: border-box;
 	color: #fff;
 	font-size: 2em;
-	height: 90px;
+	height: 110px;
 	margin-left: -1em;
 	padding: 10px 0 10px 1em;
 	position: relative;
@@ -112,8 +116,8 @@ a {
 	border-right-color: transparent;
 	content: "";
 	left: 95%;
-	top: 0;
 	position: absolute;
+	top: 0;
 	z-index: -1;
 }
 
@@ -185,9 +189,10 @@ a {
 }
 
 .entry {
-	background-color: #fff;
+	background: linear-gradient(rgba(255, 255, 255, 1) 88%, rgba(255, 255, 255, 0.95) 12%);
 	box-shadow: 0 0 4px #aaa;
 	padding: 30px 15px;
+	position: relative;
 }
 
 .entry__textInput {
@@ -249,14 +254,14 @@ select {
 	font-size: 2em;
 	padding: 0.5em 1em;
 	position: absolute;
-	right: 8vw;
+	right: -20px;
 	text-shadow: 2px 2px #8B080C;
 }
 
 .entry__submit:after {
 	border-color: #710D0D transparent transparent transparent;
 	border-style: solid;
-	border-width: 10px 40px 0 0;
+	border-width: 10px 20px 0 0;
 	bottom: -10px;
 	content: "";
 	display: block;
@@ -267,7 +272,27 @@ select {
 	z-index: -10;
 }
 
+.entry__submit--shadow {
+	background-color: #fff;
+	background-color: rgba(200, 200, 200, .7);
+	bottom: -5px;
+	content: ' ';
+	height: 5px;
+	position: absolute;
+	right: 20px;
+	width: 4.5em;
+}
+
 .entry__captcha {
 	margin-top: 10px;
 	max-width: 50%;
+}
+
+.footer {
+	background-color: #000;
+	bottom: -220px;
+	color: #8c8e90;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	position: relative;
 }
