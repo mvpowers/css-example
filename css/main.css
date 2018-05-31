@@ -85,16 +85,16 @@ body {
 	color: #fff;
 	font-size: 2em;
 	padding: 10px 0;
+	position: relative;
 	text-shadow: 2px 2px #8B080C;
 }
 
 .information__header::after {
-	border: 1.7em solid #D81921;
+	border: 1.72em solid #D81921;
 	border-right-color: transparent;
 	content: "";
-	float: left;
-	left: 42vw;
-	margin-top: -1.7em;
+	left: 95%;
+	margin-top: -1.72em;
 	position: absolute;
 	z-index: -1;
 }
@@ -226,4 +226,5 @@ select {
 
 .entry__captcha {
 	margin-top: 10px;
+	max-width: 50%;
 }
