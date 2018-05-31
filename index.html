@@ -29,9 +29,17 @@
   <div class="content">
     <div class="column">
       <img src="img/ticketToRock.png" class="information__image" />
-      <h1 class="information__header">Enter for a chance to win a Rock Flight to a Live Nation concert of your choice!</h1>
+      <h1 class="information__header">
+        Enter for a chance to win a Rock Flight
+        <sup class="superscript">®</sup> to a Live Nation
+        <sup class="superscript">®</sup> concert of your choice!
+        <sup class="superscript">+</sup>
+        <div class="information__ribbon"></div>
+      </h1>
       <h2 class="information__subheader">1 Grand Prize winner will receive:</h2>
-      <div class="information__prize information__prize--ticket">2 tickets to a Live Nation concert</div>
+      <div class="information__prize information__prize--ticket">2 tickets to a Live Nation concert in the U.S.
+        <sup class="superscript">+</sup>
+      </div>
       <div class="information__prize information__prize--plane">Airfare & hotel accommodations for 2</div>
       <div class="information__prize information__prize--dollar">$200 cash gift card</div>
     </div>
@@ -74,28 +82,34 @@
         </div>
         <div class="entry__row">
           <div class="entry__textInput--phone">
-            <label for="zip">
+            <label for="phone">
               Phone Number
               <span class="entry__footnote"> (used only to contact winners)</span>
             </label>
-            <input type="text" id="phone1" name="zip">
-            <input type="text" id="phone2" name="zip">
-            <input type="text" id="phone3" name="zip">
+            <input type="text" id="phone1" name="phone" maxlength="3">
+            <input type="text" id="phone2" name="phone" maxlength="3">
+            <input type="text" id="phone3" name="phone" maxlength="4">
           </div>
         </div>
         <div class="entry__checkInput">
           <input type="checkbox" id="officialRules" name="officialRules" value="officialRules">
-          <label for="officialRules">I agree to the Official Rules.</label>
+          <label for="officialRules">I agree to the
+            <a href="#">Official Rules</a>.</label>
         </div>
         <div class="entry__checkInput">
           <input type="checkbox" id="specialOffers" name="specialOffers" value="specialOffers">
-          <label for="specialOffers">Yes, I would like to receive special offers from GNC.</label>
+          <label for="specialOffers">Yes, I would like to receive special offers from GNC.
+            <span class="red-text">*</span>
+          </label>
         </div>
         <div class="entry__checkInput">
           <input type="checkbox" id="concertNews" name="concertNews" value="concertNews">
-          <label for="concertNews">Yes, I would like concert information from Live Nation.</label>
+          <label for="concertNews">Yes, I would like concert information from Live Nation.
+            <span class="red-text">*</span>
+          </label>
         </div>
-        <div class="entry__footnote">*Optional</div>
+        <div class="entry__footnote">
+          <span class="red-text">*</span>Optional</div>
         <button class="entry__submit">Enter Now</button>
         <img class="entry__captcha" src="img/captcha.png" />
       </form>

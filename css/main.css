@@ -10,6 +10,8 @@
 
 html {
 	background-color: #ccc;
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
 	color: #222;
 	font-family: 'DIN Condensed Bold', Arial, Helvetica, sans-serif;
 	font-size: 1em;
@@ -21,6 +23,19 @@ body {
 	width: 80vw;
 }
 
+a {
+	color: #d71921;
+}
+
+.red-text {
+	color: #d71921;
+}
+
+.superscript {
+	font-size: 0.4em;
+	margin-left: -0.4em;
+}
+
 .browserupgrade {
 	background: #ccc;
 	color: #000;
@@ -30,7 +45,7 @@ body {
 
 .header {
 	background-color: #000;
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid #d71921;
 	display: flex;
 	justify-content: space-between;
 }
@@ -42,7 +57,7 @@ body {
 
 .header__social {
 	align-items: center;
-	background-color: #ff0000;
+	background-color: #d71921;
 	color: #fff;
 	display: flex;
 	line-height: 1em;
@@ -77,16 +92,17 @@ body {
 
 .information__image {
 	background-size: cover;
-	width: 100%;
+	width: 90%;
 }
 
 .information__header {
 	background-color: #D81921;
 	color: #fff;
 	font-size: 2em;
-	padding: 10px 0;
+	margin-left: -1em;
+	padding: 10px 0 10px 1em;
 	position: relative;
-	text-shadow: 2px 2px #8B080C;
+	text-shadow: 2px 2px #810f14;
 }
 
 .information__header::after {
@@ -97,6 +113,31 @@ body {
 	margin-top: -1.72em;
 	position: absolute;
 	z-index: -1;
+}
+
+.information__header::before {
+	border-color: transparent #810f14 transparent transparent;
+	border-style: solid;
+	border-width: 0 0.7em 0.7em 0;
+	bottom: -0.7em;
+	content: '';
+	display: block;
+	height: 0;
+	left: 0;
+	position: absolute;
+	width: 0;
+	z-index: -10;
+}
+
+.information__ribbon {
+	background: linear-gradient(to right, #D11820, #A71118);
+	content: ' ';
+	height: 3.4em;
+	left: -8.5vw;
+	position: absolute;
+	top: 0.7em;
+	width: 10vw;
+	z-index: -11;
 }
 
 .information__subheader {
@@ -144,7 +185,7 @@ body {
 .entry {
 	background-color: #fff;
 	box-shadow: 0 0 4px #aaa;
-	padding: 10px;
+	padding: 30px 15px;
 }
 
 .entry__textInput {
@@ -199,7 +240,7 @@ select {
 }
 
 .entry__submit {
-	background-color: #D81921;
+	background-color: #d71921;
 	border: 0;
 	color: #fff;
 	font-family: 'Mocha Mattari', Arial, Helvetica, sans-serif;
@@ -213,7 +254,7 @@ select {
 .entry__submit:after {
 	border-color: #710D0D transparent transparent transparent;
 	border-style: solid;
-	border-width: 10px 20px 0 0;
+	border-width: 10px 40px 0 0;
 	bottom: -10px;
 	content: "";
 	display: block;
