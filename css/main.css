@@ -28,11 +28,11 @@ body {
 }
 
 a {
-	color: #d71921;
+	color: rgb(240, 180, 69);
 }
 
 .red-text {
-	color: #d71921;
+	color: rgba(255, 166, 0, 0.842);
 }
 
 .superscript {
@@ -41,15 +41,15 @@ a {
 }
 
 .browserupgrade {
-	background: #ccc;
-	color: #000;
+	background: rgb(194, 167, 167);
+	color: rgb(90, 74, 74);
 	margin: 0.2em 0;
 	padding: 0.2em 0;
 }
 
 .header {
 	background-color: #000;
-	border-bottom: 3px solid #d71921;
+	border-bottom: 3px solid rgb(235, 185, 92);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -67,7 +67,7 @@ a {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	background-color: #d71921;
+	background-color: #FFA500;
 	color: #fff;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -112,7 +112,7 @@ a {
 }
 
 .information__header {
-	background-color: #D81921;
+	background-color: #FFA500;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #fff;
@@ -125,7 +125,7 @@ a {
 }
 
 .information__header::after {
-	border: 55px solid #D81921;
+	border: 55px solid rgb(255, 136, 0);
 	border-right-color: transparent;
 	content: "";
 	left: 95%;
@@ -135,7 +135,7 @@ a {
 }
 
 .information__header::before {
-	border-color: transparent #810f14 transparent transparent;
+	border-color: transparent rgb(255, 136, 0) transparent transparent;
 	border-style: solid;
 	border-width: 0 20px 20px 0;
 	bottom: -20px;
@@ -149,10 +149,10 @@ a {
 }
 
 .information__ribbon {
-	background: -webkit-gradient(linear, left top, right top, from(#D11820), to(#A71118));
-	background: -webkit-linear-gradient(left, #D11820, #A71118);
-	background: -o-linear-gradient(left, #D11820, #A71118);
-	background: linear-gradient(to right, #D11820, #A71118);
+	background: -webkit-gradient(linear, left top, right top, from(#FFA500), to(rgb(255, 136, 0)));
+	background: -webkit-linear-gradient(left, #FFA500,rgb(255, 136, 0));
+	background: -o-linear-gradient(left, #FFA500, rgb(255, 136, 0));
+	background: linear-gradient(to right, #FFA500, rgb(255, 136, 0));
 	content: ' ';
 	height: 3.4em;
 	left: -8.5vw;
@@ -172,7 +172,7 @@ a {
 }
 
 .information__prize--ticket::before {
-	background-color: #D81921;
+	background-color: rgb(255, 136, 0);
 	border-radius: 50%;
 	color: #fff;
 	content: "\f145";
@@ -183,7 +183,7 @@ a {
 }
 
 .information__prize--plane::before {
-	background-color: #D81921;
+	background-color: rgb(255, 136, 0);
 	border-radius: 50%;
 	color: #fff;
 	content: "\f072";
@@ -194,7 +194,7 @@ a {
 }
 
 .information__prize--dollar::before {
-	background-color: #D81921;
+	background-color: rgb(255, 136, 0);
 	border-radius: 50%;
 	color: #fff;
 	content: "\f155";
@@ -274,7 +274,7 @@ select {
 }
 
 .entry__submit {
-	background-color: #d71921;
+	background-color: #fcb110;
 	border: 0;
 	color: #fff;
 	font-family: 'Mocha Mattari', Arial, Helvetica, sans-serif;
@@ -286,7 +286,7 @@ select {
 }
 
 .entry__submit:after {
-	border-color: #710D0D transparent transparent transparent;
+	border-color: #fc9e10 transparent transparent transparent;
 	border-style: solid;
 	border-width: 10px 20px 0 0;
 	bottom: -10px;
