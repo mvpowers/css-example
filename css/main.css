@@ -28,11 +28,11 @@ body {
 }
 
 a {
-	color: #FFA500;
+	color: rgb(240, 180, 69);
 }
 
 .red-text {
-	color: #FFA500;
+	color: rgba(255, 166, 0, 0.842);
 }
 
 .superscript {
@@ -41,15 +41,15 @@ a {
 }
 
 .browserupgrade {
-	background: #ccc;
-	color: #000;
+	background: rgb(194, 167, 167);
+	color: rgb(90, 74, 74);
 	margin: 0.2em 0;
 	padding: 0.2em 0;
 }
 
 .header {
 	background-color: #000;
-	border-bottom: 3px solid #FFA500;
+	border-bottom: 3px solid rgb(235, 185, 92);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
